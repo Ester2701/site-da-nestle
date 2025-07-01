@@ -1,137 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nestle</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
-   
+    <title>ChocoDelight - Your Online Chocolate Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <section class="principal container">
-            <div class="container_caixa">
-                <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço
-                único.</h1>
-                <img src="img/Combo.png" alt="O combo+ é a junção do alura+ e o alura língua" class="container__imagem">
-                <a href="www.alura.com.br; class="container_botao">Assine por 12X de R$ 120,00</a>
-                <a href="www.alura.com.br; class="container_botao botao_secundario">Assinar somente o Alura+</a>
-                <p class="container_aviso">*O preço pode varirar caso assinatura seja feita em outros planos. </p>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">ChocoDelight</a>
             </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Chocolates</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Indulge in Pure Chocolate Bliss</h1>
+            <p>Discover our exquisite collection of handcrafted chocolates.</p>
+            <a href="#products" class="btn">Shop Now</a>
         </section>
 
-      <section class="container secundario">
-        <img src="img/Plataformas.png" alt="Um monitor e um celular com a alura plus aberta" class="container__imagem">
-        <div class="container_descricao">
-            <p class="descricao_texto"> Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da técnologia e aprender inglês ou espanhol, onde e como quiser.</p>
-            <a href="www.alura.com.br" class="container_botao secundario_botao" container>Assine o Combo+</a>
-        </div>
-        <img src="img/Telas.png" alt="Tela do alura+ e alura língua" class="secundario_imagem">
-      </section>  
+        <section id="products" class="products-section">
+            <h2>Our Delicious Chocolates</h2>
+            <div class="product-grid" id="product-list">
+                </div>
+        </section>
 
-      <section class="container secundario">
-        <div class="container__descricao">
-            <p class="descricao__texto">
-                Só o Combo+ oferece Alura+ e Alura Língua juntos para  você ter acesso a cursos de diversas áreas da
-                tecnologia e aprender inglÊs ou espanhol, onde e como quiser.
-            </p>
-            <a href="www.alura.com.br" class="container__botao secundario__botao" container>Assine o Combo+</a>
-        </div>
-        <img src="img/Telas.png" alt="Telas do alura+ e alura língua" class="secundario__imagem">
-      </section>
+        <section id="about" class="about-section">
+            <h2>About ChocoDelight</h2>
+            <p>We are passionate about crafting the finest chocolates using premium ingredients and traditional techniques. Every piece is made with love and dedication to bring you an unforgettable experience.</p>
+        </section>
 
-    <section class="container secundario">
-       <img src="img/Notebook.png" alt="Notebook com páginas do curso HTML5 e CSS3 da Alura aberta"
-       class="secundario__imagem">
-       <div class="container_descricao">
-            <h2 class="descricao_titulo">Baixe seus cursos</h2>
-            <p class="descricao__texto"> baixe e assista quando e onde quiser. Assim, seus favoritos estao sempre com
-                  voce, ate mersmo sem internet.</p>
-       </div>
-    </section>
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Have questions or special requests? We'd love to hear from you!</p>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
 
-    <section class="disositivos">
-       <h2 class="disositivos_titulos"> Disponivel nos seus dispositivos favoritos</h2>
-       <ul class="dispositivos_lista">
+        <section id="cart" class="cart-section">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <p id="empty-cart-message">Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <p>Total: R$<span id="cart-total">0.00</span></p>
+                <button class="btn" id="checkout-btn">Checkout</button>
+            </div>
+        </section>
+    </main>
 
-            <li>
-                  <img ssrc="img/tv.png" alt="icones de televisao">
-                  <h3 class="lista_item">TV</h3>
-            </li>
-              
-            <li>
-                  <img src="img/computador.png" alt="icones de Computador">
-                  <h3 class="lista_item">Computador</h3>
-            </li>
-
-                   <li>
-                  <img src="img/celular.png" alt="icones de celular">
-                  <h3 class="lista_item">Computador</h3>
-            </li>
-       </ul>
-    </section>
-    <footer class="rodape">
-        <img src="img/logo" alt="alura+" class="rodape_logo">
-        <ul class="rodape_lista">
-            <li class="lista_link">
-                <a href="#">Idioma</a>
-
-            </li>
-
-             <li class="lista_link">
-                <a href="#">dispositivos compativeis</a>
-
-            </li>
-
-             <li class="lista_link">
-                <a href="#">contratos de assinaturas</a>
-
-            </li>
-
-                <li class="lista_link">
-                <a href="#">politica de privacidade</a>
-
-                
-                 </li>
-
-                <li class="lista_link">
-                <a href="#">proteçao de dados no Brasil</a>
-
-            </li>
-
-                </li>
-
-                <li class="lista_link">
-                <a href="#">anuncios personalizados</a>
-
-            </li>
-
-                 </li>
-
-                <li class="lista_link">
-                <a href="#">ajuda</a>
-
-            </li>
-
-         </ul>
-         <p class="rodape_texto">2021 alura, alura+ e alura lingua. Toddos os direitos reservados. Serviço de
-            assinatura paga. Conteudo sujeito a disponibiliodade.
-         </p>
-         <p class="rodape_txto"> Alura+ è um serviço pago em assinatura e sujeito a termos e condiçoes.
-            o serviço Alura+ É com comercializado por Aovs Sistema de Informatica S.A, Rua vergueiro, 3185 - liberdade, São paulo
-             - SP, o410 - 300, Bresil e CNPJ 05.555.382/0001 - 33</p>
-         </p>
-        
-         </footer>
-
-
-
+    <footer>
+        <p> 2025 ChocoDelight. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
